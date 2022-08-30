@@ -104,7 +104,8 @@ function App() {
   const blockchain = useSelector((state) => state.blockchain);
   const data = useSelector((state) => state.data);
   const [claimingNft, setClaimingNft] = useState(false);
-  const [feedback, setFeedback] = useState(`Click buy to mint your Goblin.`);
+  const [connectButton, setConnectButton] = useState(false);
+  const [feedback, setFeedback] = useState(`Click Mint to mint your Goblin.`);
   const [mintAmount, setMintAmount] = useState(1);
   const [CONFIG, SET_CONFIG] = useState({
     CONTRACT_ADDRESS: "",
@@ -134,6 +135,7 @@ function App() {
     console.log("Gas limit: ", totalGasLimit);
     setFeedback(`Minting your ${CONFIG.NFT_NAME}...`);
     setClaimingNft(true);
+    setConnectButton(true);
     blockchain.smartContract.methods
       .mint(mintAmount)
       .send({
@@ -146,6 +148,7 @@ function App() {
         console.log(err);
         setFeedback("Sorry, something went wrong please try again later.");
         setClaimingNft(false);
+        setConnectButton(false);
       })
       .then((receipt) => {
         console.log(receipt);
@@ -153,6 +156,7 @@ function App() {
           `WOW, the ${CONFIG.NFT_NAME} is yours! go visit OASIS to view it.`
         );
         setClaimingNft(false);
+        setConnectButton(false);
         dispatch(fetchData(blockchain.account));
       });
   };
@@ -229,9 +233,10 @@ function App() {
                       e.preventDefault();
                       dispatch(connect());
                       getData();
+                      setConnectButton("CONNECTED");
                     }}
                     >
-                    <p id="addresses">CONNECT</p><span class="hov_shape1"><img
+                    <p id="addresses">{connectButton ? "CONNECTED" : "CONNECT"}</p><span class="hov_shape1"><img
                       src="assets/images/icon/hov_shape_s.svg" alt="" /></span><span
                         class="hov_shape2"><img src="assets/images/icon/hov_shape_s.svg" alt="" /></span><span
                           class="square_hov_shape"></span>
