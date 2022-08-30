@@ -266,7 +266,7 @@ function App() {
 
                   <h4 class="banner-subtitle uppercase">Supply <span style={{color: '#00ffa3'}}>9999</span></h4>
                   <div class="bithu_v3_timer">
-                    <h5 class="uppercase">Mint is live!</h5>
+                    <h5 style={{ marginBottom: "60px", marginTop: "60px" }} class="uppercase">Mint is live!</h5>
                   </div>
                   {Number(data.totalSupply) >= CONFIG.MAX_SUPPLY ? (
                     <>
