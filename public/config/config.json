@@ -1,0 +1,18 @@
+{
+  "CONTRACT_ADDRESS": "0xf901A5237a09E37240709898E8FB52DaFbAb2caa",
+  "SCAN_LINK": "https://explorer.dogechain.dog/token/0xf901A5237a09E37240709898E8FB52DaFbAb2caa",
+  "NETWORK": {
+    "NAME": "Dogechain Mainnet",
+    "SYMBOL": "DOGE",
+    "ID": 2000
+  },
+  "NFT_NAME": "Goblins on Doge",
+  "SYMBOL": "Goblins",
+  "MAX_SUPPLY": 9999,
+  "WEI_COST": 35000000000000000000,
+  "DISPLAY_COST": 35,
+  "GAS_LIMIT": 285000,
+  "MARKETPLACE": "Oasis",
+  "MARKETPLACE_LINK": "https://oasis-nft.dog/collection/0xf901A5237a09E37240709898E8FB52DaFbAb2caa",
+  "SHOW_BACKGROUND": false
+}

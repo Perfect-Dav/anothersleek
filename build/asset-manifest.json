@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/static/css/main.448611b8.chunk.css",
+    "main.js": "/static/js/main.acb87dee.chunk.js",
+    "main.js.map": "/static/js/main.acb87dee.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.6a8bc66b.js",
+    "runtime-main.js.map": "/static/js/runtime-main.6a8bc66b.js.map",
+    "static/css/2.d8cb5cde.chunk.css": "/static/css/2.d8cb5cde.chunk.css",
+    "static/js/2.7566e18e.chunk.js": "/static/js/2.7566e18e.chunk.js",
+    "static/js/2.7566e18e.chunk.js.map": "/static/js/2.7566e18e.chunk.js.map",
+    "static/js/3.96d5abe7.chunk.js": "/static/js/3.96d5abe7.chunk.js",
+    "static/js/3.96d5abe7.chunk.js.map": "/static/js/3.96d5abe7.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.d8cb5cde.chunk.css.map": "/static/css/2.d8cb5cde.chunk.css.map",
+    "static/css/main.448611b8.chunk.css.map": "/static/css/main.448611b8.chunk.css.map",
+    "static/js/2.7566e18e.chunk.js.LICENSE.txt": "/static/js/2.7566e18e.chunk.js.LICENSE.txt",
+    "static/media/reset.css": "/static/media/font.617a0a92.woff",
+    "static/media/rare1.f9b52708.png": "/static/media/rare1.f9b52708.png",
+    "static/media/rare2.7ff673d1.png": "/static/media/rare2.7ff673d1.png",
+    "static/media/rare3.5f11f6ce.png": "/static/media/rare3.5f11f6ce.png",
+    "static/media/rare4.0c7fa4fa.png": "/static/media/rare4.0c7fa4fa.png",
+    "static/media/rare5.6bd01ed3.png": "/static/media/rare5.6bd01ed3.png",
+    "static/media/rare6.48392c1e.png": "/static/media/rare6.48392c1e.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6a8bc66b.js",
+    "static/css/2.d8cb5cde.chunk.css",
+    "static/js/2.7566e18e.chunk.js",
+    "static/css/main.448611b8.chunk.css",
+    "static/js/main.acb87dee.chunk.js"
+  ]
+}
