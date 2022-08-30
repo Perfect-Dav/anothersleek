@@ -7,7 +7,6 @@ import styled from "styled-components";
 import "./style.css";
 import "./css/bootstrap.min.css";
 import "./css/animate.css";
-import "./css/fontawesome-min.css";
 import "./css/sc-spacing.css";
 import "./css/swiper.css";
 
