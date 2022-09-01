@@ -310,7 +310,7 @@ function App() {
                   <div class="banner-bottom-text uppercase">
                       Public Mint <span style={{color: '#00ffa3'}}>{CONFIG.DISPLAY_COST}{" "}
                   </span>
-                  {CONFIG.NETWORK.SYMBOL} <br />Max <span style={{color:'#00ffa3'}}>100</span> NFTs Per Wallet Progress <span
+                  {CONFIG.NETWORK.SYMBOL} <br />Max <span style={{color:'#00ffa3'}}>100</span> NFTs Per One Tx Progress <span
                       style={{color:'#ff004c'}} id="mint_count"></span> {data.totalSupply} / {CONFIG.MAX_SUPPLY} <br /></div>
                 </div>
               </div>
