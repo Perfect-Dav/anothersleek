@@ -1,5 +1,6 @@
 import React, { useEffect, useState, useRef } from "react";
 import { useDispatch, useSelector } from "react-redux";
+import Web3 from "web3";
 import { connect } from "./redux/blockchain/blockchainActions";
 import { fetchData } from "./redux/data/dataActions";
 import * as s from "./styles/globalStyles";
@@ -127,9 +128,9 @@ function App() {
   });
 
   const claimNFTs = () => {
-    let cost = CONFIG.WEI_COST;
+    let cost = CONFIG.DISPLAY_COST;
     let gasLimit = CONFIG.GAS_LIMIT;
-    let totalCostWei = String(cost * mintAmount);
+    let totalCostWei = cost * mintAmount;
     let totalGasLimit = String(gasLimit * mintAmount);
     console.log("Cost: ", totalCostWei);
     console.log("Gas limit: ", totalGasLimit);
@@ -142,7 +143,7 @@ function App() {
         gasLimit: String(totalGasLimit),
         to: CONFIG.CONTRACT_ADDRESS,
         from: blockchain.account,
-        value: totalCostWei,
+        value: Web3.utils.toWei(String(totalCostWei))
       })
       .once("error", (err) => {
         console.log(err);
@@ -309,7 +310,7 @@ function App() {
                   <div class="banner-bottom-text uppercase">
                       Public Mint <span style={{color: '#00ffa3'}}>{CONFIG.DISPLAY_COST}{" "}
                   </span>
-                  {CONFIG.NETWORK.SYMBOL} <br />Max <span style={{color:'#00ffa3'}}>25</span> NFTs Per Wallet Progress <span
+                  {CONFIG.NETWORK.SYMBOL} <br />Max <span style={{color:'#00ffa3'}}>100</span> NFTs Per Wallet Progress <span
                       style={{color:'#ff004c'}} id="mint_count"></span> {data.totalSupply} / {CONFIG.MAX_SUPPLY} <br /></div>
                 </div>
               </div>
